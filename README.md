@@ -19,9 +19,9 @@ Dans cette étape, nous avons créé un serveur UDP qui écoute sur le port `123
 
 Le serveur reçoit les messages et affiche l'adresse IP, le port et le contenu du message.
 
-**Capture d'écran 1 !(0.png)
+![](0.png)
 
-**Capture d'écran 2 !(1.png)
+![](1.png)
 
 ## Étape 3 : Chat bidirectionnel avec plusieurs clients
 
@@ -30,10 +30,10 @@ Nous avons modifié l'application pour permettre la communication entre plusieur
 Le serveur conserve les adresses des clients dans une liste et diffuse chaque message reçu à tous les autres clients, sauf à l'expéditeur.
 
 Du côté client, nous avons utilisé un thread pour permettre l'envoi et la réception des messages simultanément.
-!(2.png)
-!(3.png)
-!(4.png)
-!(5.png)
+![](2.png)
+![](3.png)
+![](4.png)
+![](5.png)
 
 
 ## Étape 4 : Dépôt du projet sur GitHub
