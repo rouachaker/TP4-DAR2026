@@ -19,11 +19,9 @@ Dans cette étape, nous avons créé un serveur UDP qui écoute sur le port `123
 
 Le serveur reçoit les messages et affiche l'adresse IP, le port et le contenu du message.
 
-**Capture d'écran 1 :** Exécution du serveur UDP.(
+**Capture d'écran 1 !(0.png)
 
-**Capture d'écran 2 :** Envoi d'un message depuis le client.
-
-**Capture d'écran 3 :** Réception et affichage du message côté serveur.
+**Capture d'écran 2 !(1.png)
 
 ## Étape 3 : Chat bidirectionnel avec plusieurs clients
 
@@ -32,24 +30,13 @@ Nous avons modifié l'application pour permettre la communication entre plusieur
 Le serveur conserve les adresses des clients dans une liste et diffuse chaque message reçu à tous les autres clients, sauf à l'expéditeur.
 
 Du côté client, nous avons utilisé un thread pour permettre l'envoi et la réception des messages simultanément.
+!(2.png)
+!(3.png)
+!(4.png)
+!(5.png)
 
-**Capture d'écran 4 :** Exécution du serveur avec plusieurs clients.
-
-**Capture d'écran 5 :** Échange de messages entre les clients.
 
 ## Étape 4 : Dépôt du projet sur GitHub
-
-Après avoir terminé les tests, nous avons déposé le projet sur GitHub.
-
-Commandes utilisées :
-
-```bash
-git add .
-git commit -m "TP4 Chat UDP"
-git push origin main
-```
-
-**Capture d'écran 6 :** Projet publié sur GitHub.
 
 ## Conclusion
 
