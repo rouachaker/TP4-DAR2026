@@ -1,0 +1,58 @@
+# TP4 – Sockets en mode non-connecté UDP
+
+## Objectif du TP
+
+L'objectif de ce TP est de développer une application de chat client/serveur en Java utilisant le protocole UDP.
+
+Cette application permet d'envoyer et de recevoir des messages entre plusieurs clients à travers un serveur.
+
+## Étape 1 : Préparation de l'espace de travail
+
+Création d'un projet Java contenant deux classes :
+
+- `ServeurUDP.java` : gestion de la réception et de la diffusion des messages.
+- `ClientUDP.java` : gestion de l'envoi et de la réception des messages.
+
+## Étape 2 : Chat unidirectionnel avec un seul client
+
+Dans cette étape, nous avons créé un serveur UDP qui écoute sur le port `1234` et un client permettant de saisir un nom d'utilisateur et d'envoyer des messages.
+
+Le serveur reçoit les messages et affiche l'adresse IP, le port et le contenu du message.
+
+**Capture d'écran 1 :** Exécution du serveur UDP.(
+
+**Capture d'écran 2 :** Envoi d'un message depuis le client.
+
+**Capture d'écran 3 :** Réception et affichage du message côté serveur.
+
+## Étape 3 : Chat bidirectionnel avec plusieurs clients
+
+Nous avons modifié l'application pour permettre la communication entre plusieurs clients.
+
+Le serveur conserve les adresses des clients dans une liste et diffuse chaque message reçu à tous les autres clients, sauf à l'expéditeur.
+
+Du côté client, nous avons utilisé un thread pour permettre l'envoi et la réception des messages simultanément.
+
+**Capture d'écran 4 :** Exécution du serveur avec plusieurs clients.
+
+**Capture d'écran 5 :** Échange de messages entre les clients.
+
+## Étape 4 : Dépôt du projet sur GitHub
+
+Après avoir terminé les tests, nous avons déposé le projet sur GitHub.
+
+Commandes utilisées :
+
+```bash
+git add .
+git commit -m "TP4 Chat UDP"
+git push origin main
+```
+
+**Capture d'écran 6 :** Projet publié sur GitHub.
+
+## Conclusion
+
+Ce TP nous a permis de comprendre le fonctionnement des sockets UDP en Java à travers les classes `DatagramSocket` et `DatagramPacket`.
+
+Nous avons réalisé un chat unidirectionnel, puis un chat bidirectionnel permettant à plusieurs clients de communiquer en utilisant des threads.
