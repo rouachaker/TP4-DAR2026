@@ -1,4 +1,4 @@
-package ClientUDPet3;
+package ClientUDP;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
